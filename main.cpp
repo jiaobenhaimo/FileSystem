@@ -13,13 +13,14 @@ int main(){
 		cout<<"Current directory:";
 		system("pwd");
 		cout<<endl;
-		system("tree -L 1");
+		system("tree -a -L 1");
 		cout<<endl;
 		cout<<"Please input your command:"<<endl;
 		cout<<">";
 		cin>>c;
-		cmd();
-				
+		if(cmd()==1){
+			return 0;
+		}		
 	}
 	return 0;
 
